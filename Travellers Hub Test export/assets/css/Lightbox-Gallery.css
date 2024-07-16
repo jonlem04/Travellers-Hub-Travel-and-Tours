@@ -76,18 +76,11 @@
 }
 
 #front-page-background {
-  width: 837px;
-  height: 377px;
-}
-
-@media (min-width: 300px) {
-  #Heading-Message {
-  }
-}
-
-@media (min-width: 300px) {
-  #front-page-background {
-  }
+  max-width: 700px;
+  margin: auto 0;
+  position: relative;
+  padding: 25px;
+  width: 95%;
 }
 
 #Email-Link {
