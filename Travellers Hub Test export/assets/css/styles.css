@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #eef4f7;
   color: white;
 }
 
@@ -52,7 +52,7 @@ body {
   background-color: #0299c4;
 }
 
-#Home:Hover {
+#Home-Link:Hover {
   -webkit-transform: scale(1.1);
   color: #0299c4;
 }

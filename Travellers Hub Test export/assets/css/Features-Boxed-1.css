@@ -24,8 +24,7 @@
 
 .features-boxed .intro {
   font-size: 16px;
-  max-width: 400px;
-  max-height: 170px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -67,25 +66,5 @@
   font-size: 15px;
   margin-top: 15px;
   margin-bottom: 20px;
-}
-
-#Center-Line {
-  width: 4px;
-  height: 98px;
-  border-right-style: dotted;
-  border-right-color: rgba(145,139,139,0.66);
-}
-
-#Travel-Options-1 {
-  max-width: 1200px;
-  margin: auto;
-}
-
-#Travel-Options-2 {
-  max-width: 1200px;
-  margin: auto;
-}
-
-#Heading-Message-responsive {
 }
 

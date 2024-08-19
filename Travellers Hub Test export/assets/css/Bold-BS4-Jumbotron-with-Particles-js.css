@@ -67,3 +67,69 @@
   margin-top: 40px;
 }
 
+#Link-Column {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#About-Us-Container {
+  margin: auto;
+}
+
+#Submit-Testimony:Hover {
+  -webkit-transform: scale(1.1);
+  background-color: #0299c4;
+}
+
+#Submit-Testimony {
+  box-shadow: 0 0 1px #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  background: #0ac0f4;
+}
+
+#Section-1-Container {
+  margin: auto 0;
+}
+
+#Section-1 {
+  margin: auto 0;
+}
+
+#Help-Support-Link:Hover {
+  -webkit-transform: scale(1.1);
+  color: #0299c4;
+}
+
+#About-Us-Link:Hover {
+  -webkit-transform: scale(1.1);
+  color: #0299c4;
+}
+
+#Testimonials:Hover {
+  color: #0ac0f4;
+}
+
+#Who-We-Are:Hover {
+  color: #0ac0f4;
+}
+
+#Mission-Vision:Hover {
+  color: #0ac0f4;
+}
+
+#FAQ:Hover {
+  color: #0ac0f4;
+}
+
+#Contact-Us:Hover {
+  color: #0ac0f4;
+}
+
+#Terms-Condition:Hover {
+  color: #0ac0f4;
+}
+
