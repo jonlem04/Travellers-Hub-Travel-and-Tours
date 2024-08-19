@@ -133,3 +133,12 @@
   color: #0ac0f4;
 }
 
+#Sign-Up-Link:Hover {
+  -webkit-transform: scale(1.1);
+  color: #0ac0f4;
+}
+
+#Login-Button:Hover {
+  -webkit-transform: scale(1.1);
+}
+
