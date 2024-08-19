@@ -1,0 +1,33 @@
+/* Styles for MissionVision Section */
+.mission-vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 20px solid #f4f4f4;
+    padding: 20px;
+  }
+  
+.row {
+    display: grid;
+    border-radius: 0%;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 40px;
+}
+  
+.row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+  
+h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.5em;
+
+}
