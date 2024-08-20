@@ -46,7 +46,7 @@
 </head>
 
 <body style="background: #eef4f7;">
-    <section class="d-flex flex-column" id="First-Section" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;background: url(&quot;../assets/img/background.jpg&quot;) center / cover no-repeat;">
+    <section id="First-Section" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;margin-bottom: 135px;background: url(&quot;../assets/img/background.jpg&quot;) bottom / cover no-repeat;">
         <nav class="navbar navbar-light navbar-expand-lg sticky-top" id="nav" style="box-shadow: 0px 0px 6px 0px rgb(0,0,0);">
             <div class="container-fluid"><a class="navbar-brand" id="logo" href="#" style="margin-right: -6px;"><img class="img-fluid" src="../assets/img/Logo_NoBG.png" style="width: 65px;margin-right: -12px;margin-top: 0px;padding-bottom: 0px;"></a>
                 <div class="container d-flex flex-column justify-content-center align-items-center align-content-center" id="Brand-Name" style="width: 220.797px;margin-left: 5px;margin-top: 16px;">
@@ -62,7 +62,7 @@
                     </div>
                 </div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item" id="Home"><a class="nav-link" id="Home-Link" href="Homepage.html" style="margin-right: 20px;">Home</a></li>
                         <li class="nav-item dropdown" data-bss-hover-animate="bounce" id="About-Us"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" id="About-Us-Link" href="#">About Us</a>
                             <div class="dropdown-menu" style="color: rgb(33, 37, 41);background: #eef4f7;line-height: 25px;padding-left: 12px;"><a class="dropdown-item" id="Testimonials" href="About%20Us/Testimonials.html">Testimonials</a><a class="dropdown-item" id="Who-We-Are" href="About%20Us/Introduction.html">Who We Are</a></div>
@@ -70,15 +70,15 @@
                         <li class="nav-item dropdown" id="Help-Support"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" id="Help-Support-Link" href="#">Help &amp; Support</a>
                             <div class="dropdown-menu" style="background: #eef4f7;line-height: 25px;"><a class="dropdown-item" id="FAQ" href="Help%20&amp;%20Support/FAQ.html">FAQ</a><a class="dropdown-item" id="Contact-Us" href="About%20Us/Introduction.html">Contact Us</a><a class="dropdown-item" id="Terms-Condition" href="About%20Us/Introduction.html">Terms &amp; Condition</a></div>
                         </li>
-                    </ul><a class="btn btn-primary active ms-auto" role="button" id="Sign-In" style="font-size: 20px;font-weight: bold;width: 120px;" href="Sign%20In/Sign%20In.html">Sign In</a>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <div class="d-flex flex-row justify-content-center align-items-center" data-aos="fade" data-aos-duration="800" data-aos-delay="100" id="front-page-background" style="filter: brightness(200%);">
+        <div class="d-flex flex-row justify-content-center align-items-center" data-aos="fade" data-aos-duration="800" data-aos-delay="100" id="front-page-background" style="filter: brightness(200%);border-radius: 18px;background: rgba(0,0,0,0.23);margin-top: 66px;box-shadow: 0px 0px;">
             <div class="container d-flex flex-column" id="Front-Message">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col justify-content-xxl-end">
-                        <h1 id="Heading-Message" style="font-family: 'Allerta Stencil', sans-serif;text-shadow: 0px 0px 20px var(--bs-dark);text-align: right;filter: brightness(62%);letter-spacing: 9px;line-height: 67.4px;font-size: 52px;">TRAVEL WITH US</h1>
+                        <h1 id="Heading-Message" style="font-family: 'Allerta Stencil', sans-serif;text-shadow: 0px 0px 20px var(--bs-dark);text-align: right;letter-spacing: 8px;line-height: 67.4px;font-size: 52px;">TRAVEL WITH US</h1>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center align-items-center">
@@ -86,9 +86,12 @@
                         <p id="Heading-Paragraph" style="font-size: 18px;font-family: 'Alegreya SC', serif;text-shadow: 0px 0px 20px var(--bs-dark);color: #959893;">Explore the vast and captivating world for less money.<br></p>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col"><a class="btn btn-primary btn-lg" role="button" id="Sign-In" href="#" style="background: #02bef2;filter: brightness(50%);max-width: 180px;">Explore Now</a></div>
+                </div>
             </div>
-            <div id="Image" style="opacity: 0.94;"><img src="../assets/img/airplane%20(1).png" width="200px"></div>
-        </div><a class="btn active btn-sm d-flex justify-content-center m-auto" role="button" data-bss-hover-animate="swing" id="Down-Button" href="#Second-Section"><i class="fa fa-chevron-down flash animated"></i></a>
+            <div id="Image" style="filter: brightness(62%);"><img src="../assets/img/airplane%20(1).png" width="270px"></div>
+        </div>
     </section>
     <section id="Second-Section">
         <div class="container text-start d-flex flex-column" id="Second-Sec-Heading">
@@ -228,6 +231,17 @@
             <p class="copyright">Travellers Hub Travel and Tours © 2024</p>
         </div>
     </footer>
+    <div class="p-5 mb-4 bg-light round-3" style="background: url(&quot;../assets/img/background.jpg&quot;) center / cover no-repeat;height: 80vh;">
+        <div class="container-fluid py-5">
+            <div class="row d-flex align-items-center align-content-center" style="width: 1343px;background: rgba(0,0,0,0.24);">
+                <div class="col-xxl-8 offset-xxl-1 d-flex flex-column align-items-xl-end">
+                    <h1 class="display-5 fw-bold" style="text-align: center;font-family: 'Allerta Stencil', sans-serif;">TRAVEL WITH US<br></h1>
+                    <p class="col-md-8 fs-4" style="text-align: right;">Explore the vast and captivating world for less money.<br></p>
+                </div>
+                <div class="col-xxl-2"><img class="img-fluid" src="../assets/img/airplane%20(1).png" width="200px"></div>
+            </div>
+        </div>
+    </div>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
