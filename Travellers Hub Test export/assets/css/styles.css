@@ -53,17 +53,6 @@ body {
 }
 
 #Home-Link:Hover {
-  -webkit-transform: scale(1.1);
-  color: #0299c4;
-}
-
-#About-Us:Hover {
-  -webkit-transform: scale(1.1);
-  color: #0299c4;
-}
-
-#Help-Support:Hover {
-  -webkit-transform: scale(1.1);
   color: #0299c4;
 }
 
