@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../../assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="../../assets/css/Login-Animate.css">
     <link rel="stylesheet" href="../../assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Login-with-overlay-image.css">
     <link rel="stylesheet" href="../../assets/css/Responsive-Sticky-Navigation-1.css">
     <link rel="stylesheet" href="../../assets/css/Responsive-Sticky-Navigation.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
@@ -45,7 +46,7 @@
     <link rel="stylesheet" href="../../assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
 </head>
 
-<body>
+<body style="background: #eef4f7;">
     <nav class="navbar navbar-light navbar-expand-lg sticky-top" id="nav" style="box-shadow: 0px 0px 6px 0px rgb(0,0,0);">
         <div class="container-fluid"><a class="navbar-brand" id="logo" href="#" style="margin-right: -6px;"><img class="img-fluid" src="../../assets/img/Logo_NoBG.png" style="width: 70px;margin-right: -12px;margin-top: 0px;padding-bottom: 0px;"></a>
             <div class="container d-flex flex-column justify-content-center align-items-center align-content-center" id="Brand-Name" style="width: 220.797px;margin-left: 5px;margin-top: 16px;">
@@ -64,25 +65,37 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item" id="Home"><a class="nav-link" id="Home-Link" href="../Homepage.html" style="margin-right: 20px;">Home</a></li>
                     <li class="nav-item dropdown" id="About-Us"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" id="About-Us-Link" href="#">About Us</a>
-                        <div class="dropdown-menu" style="color: rgb(33, 37, 41);background: #eef4f7;line-height: 25px;padding-left: 12px;"><a class="dropdown-item" id="Testimonials" href="../About%20Us/Testimonials.html">Testimonials</a><a class="dropdown-item" id="Who-We-Are" href="../About%20Us/Introduction.html">Who We Are</a></div>
+                        <div class="dropdown-menu" style="color: rgb(33, 37, 41);background: #eef4f7;line-height: 25px;padding-left: 12px;"><a class="dropdown-item" id="Testimonials-1" href="Testimonials.html">Testimonials</a><a class="dropdown-item" id="Who-We-Are" href="Introduction.html">Who We Are</a></div>
                     </li>
                     <li class="nav-item dropdown" id="Help-Support"><a class="nav-link" aria-expanded="false" data-bs-toggle="dropdown" id="Help-Support-Link" href="#">Help &amp; Support</a>
-                        <div class="dropdown-menu" style="background: #eef4f7;line-height: 25px;"><a class="dropdown-item" id="FAQ" href="FAQ.html">FAQ</a><a class="dropdown-item" id="Contact-Us-1" href="Contact%20Us.html">Contact Us</a><a class="dropdown-item" id="Terms-Condition" href="Terms%20Condition.html">Terms &amp; Condition</a></div>
+                        <div class="dropdown-menu" style="background: #eef4f7;line-height: 25px;"><a class="dropdown-item" id="FAQ" href="../Help%20&amp;%20Support/FAQ.html">FAQ</a><a class="dropdown-item" id="Contact-Us" href="../Help%20&amp;%20Support/Contact%20Us.html">Contact Us</a><a class="dropdown-item" id="Terms-Condition" href="../Help%20&amp;%20Support/Terms%20Condition.html">Terms &amp; Condition</a></div>
                     </li>
                 </ul><a class="btn btn-primary active ms-auto" role="button" id="Sign-In" style="width: 146px;font-size: 20px;font-weight: bold;">Sign In</a>
             </div>
         </div>
     </nav>
-    <div class="container" id="Terms-and-Condition">
-        <h1 class="text-start" style="color: #313437;text-align: left;border-bottom-style: solid;border-bottom-color: rgb(49, 52, 55);max-width: 1108px;padding-left: 10px;">Terms and Conditions<br></h1>
-        <h5 class="text-start" style="color: #313437;">The terms &amp; conditions below are general in nature. the rules and agreements between travelers and travel providers. They cover aspects like booking policies, cancellation fees, liability, and other important details to ensure a smooth and mutually beneficial travel experience for all parties involved.<br></h5>
-        <ul>
-            <li style="color: #7d8285;">Booking &amp; Prices<br></li>
-            <li style="color: #7d8285;">Cancellation Package &amp; Customization<br></li>
-            <li style="color: #7d8285;">Participation<br></li>
-            <li style="color: #7d8285;">Passports, Visa, and Entry Requirements<br></li>
-            <li style="color: #7d8285;">Your Information &amp; Privacy<br></li>
-        </ul>
+    <div class="container" id="Testimonies" style="margin-bottom: 37px;margin-top: 26px;">
+        <h2 style="color: #313437;">Testimonies</h2>
+        <div class="row d-flex flex-row">
+            <div class="col" data-bss-hover-animate="swing" id="Testimony-1" style="background: #ffffff;box-shadow: 0px 0px 8px rgba(143,142,142,0.76);margin-right: 30px;border-radius: 11px;color: rgb(33, 37, 41);"><i class="fa fa-quote-right" style="font-size: 45px;color: #7d8285;margin-top: 20px;padding-left: 8px;"></i>
+                <p style="color: #7d8285;font-size: 18px;padding-left: 11px;">I recently booked my dream vacation to Bali through Travellers Hub Travel and Tours, and it was an unforgettable experience! The booking process was seamless, and their customer service was outstanding. They took care of every detail, from flights to accommodations, ensuring I had the best possible experience. I highly recommend Travellers Hub for anyone looking to plan their next adventure!<br></p>
+                <h2 style="color: #313437;padding-left: 8px;">Saj Boton<br></h2>
+            </div>
+            <div class="col" data-bss-hover-animate="swing" id="Testimony-2" style="background: #ffffff;box-shadow: 0px 0px 8px rgba(143,142,142,0.76);margin-right: 30px;border-radius: 11px;"><i class="fa fa-quote-right" style="font-size: 45px;color: #7d8285;margin-top: 20px;padding-left: 8px;"></i>
+                <p style="color: #7d8285;font-size: 18px;padding-left: 11px;">Travellers Hub Travel and Tours made our honeymoon to Thailand absolutely perfect. They offered a variety of package options that fit our budget and preferences. The website was easy to navigate, and their support team was always available to answer our questions. Thanks to Travellers Hub, we created memories that will last a lifetime. We can't wait to book our next trip with them!<br></p>
+                <h2 style="color: #313437;padding-left: 8px;">JohnBill Serrano<br></h2>
+            </div>
+            <div class="col" data-bss-hover-animate="swing" id="Testimony-3" style="background: #ffffff;box-shadow: 0px 0px 8px rgba(143,142,142,0.76);border-radius: 11px;"><i class="fa fa-quote-right" style="font-size: 45px;color: #7d8285;margin-top: 20px;padding-left: 8px;"></i>
+                <p style="color: #7d8285;font-size: 18px;padding-left: 11px;">Booking my solo trip to Japan with Travellers Hub Travel and Tours was the best decision I made. Their site provided detailed information on various destinations and activities, making it easy to plan my itinerary. The travel experts were knowledgeable and gave me great tips on exploring the local culture. Travellers Hub made my journey smooth and enjoyable. I'll definitely use their services again!<br></p>
+                <h2 style="color: #313437;padding-left: 8px;">Allen Fajardo<br></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="Testimonial-Container" style="margin-top: 13px;">
+        <section id="Testimonials" style="margin-bottom: 24px;">
+            <h2 style="color: #313437;">Testimonials</h2>
+            <p style="color: #7d8285;">Your feedback will be crucial in shaping the future direction of our project. We value your insights and perspectives, as they will help us refine our strategies and improve our performance. Your honest evaluation will enable us to identify areas of strength and areas that need improvement, ultimately leading to a more successful outcome.<br></p><button class="btn btn-primary" id="Submit-Testimony" type="button" style="background: #0ac0f4;">Submit a Testimony</button>
+        </section>
     </div>
     <footer class="footer-dark">
         <div class="container">

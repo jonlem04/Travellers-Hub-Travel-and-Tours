@@ -127,11 +127,6 @@
   color: #0ac0f4;
 }
 
-#Sign-Up-Link:Hover {
-  -webkit-transform: scale(1.1);
-  color: #0ac0f4;
-}
-
 #Login-Button:Hover {
   -webkit-transform: scale(1.1);
 }
@@ -154,5 +149,40 @@
 
 .dropdown-menu {
   color: black;
+}
+
+#Return-Home-Icon:Hover {
+  -webkit-transform: scale(1.1);
+  color: #0299c4;
+}
+
+#Register-Link:Hover {
+  text-decoration: underline;
+}
+
+#Terms-and-Condition-Link:Hover {
+  text-decoration: underline;
+}
+
+#Login-Button {
+  margin: auto;
+  margin-top: 40px;
+}
+
+#Login-Button {
+  margin: auto;
+  margin-top: 40px;
+}
+
+#Message-Box {
+  max-width: 400px;
+}
+
+#Open-Gmail-Button:HOver {
+  background-color: #0299c4;
+}
+
+#Open-Gmail-Button {
+  background: #0ac0f4;
 }
 

@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../../assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="../../assets/css/Login-Animate.css">
     <link rel="stylesheet" href="../../assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Login-with-overlay-image.css">
     <link rel="stylesheet" href="../../assets/css/Responsive-Sticky-Navigation-1.css">
     <link rel="stylesheet" href="../../assets/css/Responsive-Sticky-Navigation.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
@@ -46,7 +47,7 @@
 </head>
 
 <body>
-    <div class="d-flex" id="Logo" style="background: #ffffff;box-shadow: 0px 0px rgb(255, 255, 255), 0px 0px;color: rgb(255, 255, 255);"><a class="navbar-brand" id="logo-1" href="#" style="margin-right: -6px;"><img class="img-fluid" src="../../assets/img/Logo_NoBG.png" style="width: 65px;margin-right: -12px;margin-top: 0px;padding-bottom: 0px;"></a>
+    <div class="d-flex flex-row align-items-center align-content-center justify-content-xl-start" id="Logo" style="color: rgb(255, 255, 255);background: #ffffff;padding-left: 25px;"><a class="navbar-brand" id="logo-1" href="#" style="margin-right: -6px;"><img class="img-fluid" src="../../assets/img/Logo_NoBG.png" style="width: 65px;margin-right: -12px;margin-top: 0px;padding-bottom: 0px;"></a>
         <div class="container d-flex flex-column justify-content-center align-items-center align-content-center" id="Brand-Name" style="width: 220.797px;margin-left: 5px;margin-top: 16px;">
             <div class="row" id="head-1">
                 <div class="col" style="margin-bottom: -13px;margin-left: -19px;">
@@ -60,48 +61,25 @@
             </div>
         </div>
     </div>
-    <section class="d-flex login-clean">
-        <form method="post">
+    <section class="d-flex login-clean" style="background: #eef4f7;border-top-style: solid;">
+        <form method="post"><a id="Return-Home-Link" href="Sign%20In.html" style="color: #7d8285;"><i class="fas fa-arrow-left" id="Return-Home-Icon" style="font-size: 18px;"></i></a>
             <div class="d-flex illustration">
                 <div class="container align-items-center align-content-center align-items-xxl-center">
-                    <div class="d-flex">
-                        <h3 style="color: #0ac0f4;">Welcome back</h3>
+                    <div class="d-flex justify-content-center">
+                        <h3 style="color: #0299c4;">Registration</h3>
                     </div>
                 </div>
             </div>
-            <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-            <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="mb-3"><button class="btn btn-primary d-block w-100" id="Login-Button" type="submit">Log In</button>
-                <div class="container d-flex flex-row" style="margin-top: 9px;margin-bottom: -30px;"><span style="font-size: 12px;">Don't have an account?</span><a id="Sign-Up-Link" class="forgot" href="#">&nbsp;Sign Up Now</a></div>
-            </div>
+            <div class="d-flex flex-row justify-content-between" id="Name-Regter-Form" style="margin-bottom: 10px;"><input class="form-control" type="text" id="First-Name-Field-Register" style="background: rgb(255,255,255);max-width: 200px;font-size: 14px;" placeholder="First name"><input class="form-control" type="text" id="Middle-Name-Field-Register" style="background: rgb(255,255,255);font-size: 14px;max-width: 200px;" placeholder="Middle Name"><input class="form-control" type="text" id="Last-Name-Field-Register" style="background: rgb(255,255,255);max-width: 200px;font-size: 14px;" placeholder="Last Name"></div>
+            <div class="d-flex flex-row justify-content-between mb-3" id="Telephone-and-Birth-Date-Regter-Form"><input class="form-control" type="tel" id="Phone-Number-Field-Register" style="background: rgb(255,255,255);font-size: 14px;max-width: 230px;" placeholder="Phone Number"><input class="form-control" id="Birth-Date-Input-Register" type="date" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;"></div>
+            <div id="Address-Regter-Form" style="margin-bottom: 46px;"><input class="form-control" type="text" id="Address-Field-Register" placeholder="Address" style="background: rgb(255,255,255);font-size: 14px;"></div>
+            <div id="Email-Regter-Form" style="margin-top: 6px;">
+                <p style="font-size: 12px;text-align: center;"><strong>Note: </strong>Email and Password will be used to Log In</p><input class="form-control" type="email" id="Email-Address-Field-Register" style="background: rgb(255,255,255);font-size: 14px;" placeholder="Email">
+                <div class="d-flex flex-row justify-content-between" id="Password-Regter-Form" style="margin-top: 10px;"><input class="form-control" type="password" id="Password-Field-Register" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" placeholder="Password"><input class="form-control" type="password" id="Confirm-Password-Field-Register" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" placeholder="Confirm Password"></div>
+            </div><a class="btn btn-primary d-block w-100" role="button" id="Login-Button" href="../../Email%20Confirmation/Email%20Verification.html" style="max-width: 200px;">Register</a>
+            <div class="mb-3"></div>
         </form>
     </section>
-    <footer class="footer-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 col-xxl-5 offset-xxl-0 item">
-                    <h3>Travellers Hub Travel and Tours</h3>
-                    <ul>
-                        <li><a href="#" style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-map-pin">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="12" cy="11" r="3"></circle>
-                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-                                </svg>&nbsp;Conception Uno, Marikina City, Philippines</a></li>
-                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
-                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
-                                </svg>&nbsp;0933-2834-376<br><br><br></a></li>
-                        <li><a id="Email-Link" href="https://mail.google.com/mail/almapalad@travellershubtravelandtours@gmail.com"><br>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-mail">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-                                    <polyline points="3 7 12 13 21 7"></polyline>
-                                </svg>&nbsp;almapalad@travellershubtravelandtours@gmail.com<br><br><br><br></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col item social"><a href="https://www.facebook.com/profile.php?id=100089339148523"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-            <p class="copyright">Travellers Hub Travel and Tours © 2024</p>
-        </div>
-    </footer>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

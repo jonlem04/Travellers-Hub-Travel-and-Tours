@@ -70,10 +70,11 @@
 }
 
 #Center-Line {
-  width: 4px;
-  height: 80px;
-  border-right-style: dotted;
-  border-right-color: rgba(145,139,139,0.66);
+  width: 480px;
+  height: 0.00000000001px;
+  border-bottom-style: solid;
+  border-bottom-color: #efefef;
+  margin: auto;
 }
 
 #Travel-Options-1 {
