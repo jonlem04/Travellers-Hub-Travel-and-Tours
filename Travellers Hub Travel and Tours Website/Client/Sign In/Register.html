@@ -62,7 +62,7 @@
         </div>
     </div>
     <section class="d-flex login-clean" style="background: #eef4f7;border-top-style: solid;">
-        <form method="post"><a id="Return-Home-Link" href="Sign%20In.html" style="color: #7d8285;"><i class="fas fa-arrow-left" id="Return-Home-Icon" style="font-size: 18px;"></i></a>
+        <form method="post" action="http://localhost:5000/api/auth/login"><a id="Return-Home-Link" href="Sign%20In.html" style="color: #7d8285;"><i class="fas fa-arrow-left" id="Return-Home-Icon" style="font-size: 18px;"></i></a>
             <div class="d-flex illustration">
                 <div class="container align-items-center align-content-center align-items-xxl-center">
                     <div class="d-flex justify-content-center">
@@ -70,13 +70,13 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row justify-content-between" id="Name-Regter-Form" style="margin-bottom: 10px;"><input class="form-control" type="text" id="First-Name-Field-Register" style="background: rgb(255,255,255);max-width: 200px;font-size: 14px;" placeholder="First name"><input class="form-control" type="text" id="Middle-Name-Field-Register" style="background: rgb(255,255,255);font-size: 14px;max-width: 200px;" placeholder="Middle Name"><input class="form-control" type="text" id="Last-Name-Field-Register" style="background: rgb(255,255,255);max-width: 200px;font-size: 14px;" placeholder="Last Name"></div>
-            <div class="d-flex flex-row justify-content-between mb-3" id="Telephone-and-Birth-Date-Regter-Form"><input class="form-control" type="tel" id="Phone-Number-Field-Register" style="background: rgb(255,255,255);font-size: 14px;max-width: 230px;" placeholder="Phone Number"><input class="form-control" id="Birth-Date-Input-Register" type="date" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;"></div>
-            <div id="Address-Regter-Form" style="margin-bottom: 46px;"><input class="form-control" type="text" id="Address-Field-Register" placeholder="Address" style="background: rgb(255,255,255);font-size: 14px;"></div>
+            <div class="d-flex flex-row justify-content-between" id="Name-Regter-Form" style="margin-bottom: 10px;"><input class="form-control" type="text" id="First-Name-Field-Register" style="background: rgb(255,255,255);max-width: 200px;font-size: 14px;" placeholder="First name" required=""><input class="form-control" type="text" id="Middle-Name-Field-Register" style="background: rgb(255,255,255);font-size: 14px;max-width: 200px;" placeholder="Middle Name"><input class="form-control" type="text" id="Last-Name-Field-Register" style="background: rgb(255,255,255);max-width: 200px;font-size: 14px;" placeholder="Last Name" required=""></div>
+            <div class="d-flex flex-row justify-content-between mb-3" id="Telephone-and-Birth-Date-Regter-Form"><input class="form-control" type="tel" id="Phone-Number-Field-Register" style="background: rgb(255,255,255);font-size: 14px;max-width: 230px;" placeholder="Phone Number" required=""><input class="form-control" id="Birth-Date-Input-Register" type="date" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" required=""></div>
+            <div id="Address-Regter-Form" style="margin-bottom: 46px;"><input class="form-control" type="text" id="Address-Field-Register" placeholder="Address" style="background: rgb(255,255,255);font-size: 14px;" required=""></div>
             <div id="Email-Regter-Form" style="margin-top: 6px;">
-                <p style="font-size: 12px;text-align: center;"><strong>Note: </strong>Email and Password will be used to Log In</p><input class="form-control" type="email" id="Email-Address-Field-Register" style="background: rgb(255,255,255);font-size: 14px;" placeholder="Email">
-                <div class="d-flex flex-row justify-content-between" id="Password-Regter-Form" style="margin-top: 10px;"><input class="form-control" type="password" id="Password-Field-Register" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" placeholder="Password"><input class="form-control" type="password" id="Confirm-Password-Field-Register" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" placeholder="Confirm Password"></div>
-            </div><a class="btn btn-primary d-block w-100" role="button" id="Login-Button" href="../Email%20Confirmation/Email%20Verification.html" style="max-width: 200px;">Register</a>
+                <p style="font-size: 12px;text-align: center;"><strong>Note: </strong>Email and Password will be used to Log In</p><input class="form-control" type="email" id="Email-Address-Field-Register" style="background: rgb(255,255,255);font-size: 14px;" placeholder="Email" required="">
+                <div class="d-flex flex-row justify-content-between" id="Password-Regter-Form" style="margin-top: 10px;"><input class="form-control" type="password" id="Password-Field-Register" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" placeholder="Password" required=""><input class="form-control" type="password" id="Confirm-Password-Field-Register" style="background: rgb(255,255,255);max-width: 230px;font-size: 14px;" placeholder="Confirm Password" required=""></div>
+            </div><a class="btn btn-primary d-block w-100" role="button" id="Login-Button" href="../../Email%20Confirmation/Email%20Verification.html" style="max-width: 200px;">Register</a>
             <div class="mb-3"></div>
         </form>
     </section>
