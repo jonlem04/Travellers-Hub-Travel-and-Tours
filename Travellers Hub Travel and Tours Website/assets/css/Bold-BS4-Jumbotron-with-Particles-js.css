@@ -186,3 +186,88 @@
   background: #0ac0f4;
 }
 
+#Domestic-Button:hover {
+  background-color: #8dc53e;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#Login-Form-Center-Line {
+  width: 450px;
+  height: 0.00000000001px;
+  border-bottom-style: solid;
+  border-bottom-color: #efefef;
+  margin: auto;
+}
+
+#Domestic-Button {
+  background: #ffffff;
+  color: #8dc53e;
+  border: 1px solid #eef4f7;
+}
+
+#International-Button {
+  background: #ffffff;
+  color: #0299c4;
+}
+
+#International-Button:hover {
+  background-color: #0299c4;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#Choose-Destination {
+  margin: auto;
+}
+
+#Heading-Center-Line {
+  width: 450px;
+  height: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #313437;
+  margin: auto;
+}
+
+#Travel-Option-Line {
+  width: 5px;
+  height: 100px;
+  border-left-style: dotted;
+  border-left-color: #ffffff;
+  margin: auto;
+}
+
+#Travel-Option-Line-2 {
+  width: 5px;
+  height: 160px;
+  border-left-style: solid;
+  border-left-color: #0ac0f4;
+}
+
+#Travel-Option-Line-1 {
+  width: 5px;
+  height: 160px;
+  border-right-style: solid;
+  border-right-color: #8dc53e;
+}
+
+#Third-Section {
+  max-wwidth: 100%;
+  max-height: 100%;
+}
+
+#Explore-Now-Button {
+  background: #0299c4;
+}
+
+#Explore-Now-Button:Hover {
+  -webkit-transform: scale(1.1);
+  background-color: #0ac0f4;
+}
+
+@media (min-width: 300px) {
+  #Third-Section {
+    max-height: 5000px;
+  }
+}
+
