@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Admin Panel</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-poll"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Admin Panel</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link active" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a></li>
+                    <li class="nav-item dropdown" id="CustomBooking"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-newspaper"></i>Custom Bookings</a>
+                        <div class="dropdown-menu" style="background: #18212d;"><a class="dropdown-item" id="CustomBookingApproval" href="CustomBookingApproval.html" style="color: #eef4f7;">Pending Approval</a><a class="dropdown-item" id="CustomBookingInformation" href="CustomBookingInformation.html" style="color: #eef4f7;">Booking Information</a></div>
+                    </li>
+                    <li class="nav-item dropdown" id="PackageBooking"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-box-open"></i>Package Bookings</a>
+                        <div class="dropdown-menu" style="background: #18212d;"><a class="dropdown-item" id="PackageBookingApproval" href="PackageBookingApproval.html" style="color: #eef4f7;">Pending Approval</a><a class="dropdown-item" id="PackageBookingInformation" href="PackageBookingInformation.html" style="color: #eef4f7;">Booking Information</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Users.html"><i class="fa fa-user"></i><span>Users</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="blank.html"><i class="fas fa-window-maximize"></i><span>Blank Page</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">User Information</h3>
+                    <div class="card shadow">
+                        <div class="card-header text-end d-flex flex-row justify-content-between align-items-center align-content-center py-3"><label class="form-label"><input type="search" id="SearchUser" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label><button class="btn btn-primary" id="CreateUserButton" type="button">Create User</button></div>
+                        <div class="card-body">
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="UserTable">
+                                    <thead>
+                                        <tr>
+                                            <th>First Name</th>
+                                            <th>Middle Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Birth Date</th>
+                                            <th>Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Rows will be populated here -->
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers" id="PageNumber">
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Travellers Hub Travel and Tours 2024</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <div class="modal fade" role="dialog" tabindex="-1" id="ViewCustomBooking">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">View Information</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="d-flex flex-row align-items-xxl-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <p><strong>Name</strong></p>
+                                        <p>&nbsp;-</p>
+                                    </div>
+                                    <div class="col">
+                                        <p><strong>Email</strong></p>
+                                        <p>&nbsp;-</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><strong># of Adult</strong></p>
+                                        <p>&nbsp;-</p>
+                                    </div>
+                                    <div class="col">
+                                        <p><strong># of Children</strong></p>
+                                        <p>&nbsp;-</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><strong>Duration (in days)</strong></p>
+                                        <p>&nbsp;-</p>
+                                    </div>
+                                    <div class="col">
+                                        <p><strong>Departure date</strong></p>
+                                        <p>yyyy/mm/dd</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p><strong>Country - City</strong></p>
+                                        <p>&nbsp;-</p>
+                                    </div>
+                                    <div class="col">
+                                        <p><strong>Itenerary Outline</strong></p>
+                                        <p>yyyy/mm/dd</p>
+                                    </div>
+                                </div>
+                                <p><strong>Info Validation</strong></p>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center align-content-center justify-content-xxl-start">
+                                        <p>Birth Certificate</p><img class="d-flex d-xxl-flex flex-row justify-content-center align-items-center justify-content-xxl-center" src="assets/img/543916392604de744f9cad775ac5a9b1.jpg" width="300px">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex flex-column">
+                                        <p><strong>Valid ID</strong></p><img class="d-flex d-xxl-flex" src="assets/img/national-ID.webp">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="EditCustomBooking">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Information</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col"><label class="form-label">Number of Adult</label><input class="form-control" type="text"></div>
+                                    <div class="col"><label class="form-label">Number of Children</label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><label class="form-label">Duration (in days)</label><input class="form-control" type="text"></div>
+                                    <div class="col"><label class="form-label">Departure Date</label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><label class="form-label">Itenerary Note</label><input class="form-control" type="text"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><label class="form-label">Upload Birth Certificate</label><input class="form-control" type="file"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><label class="form-label">Upload Valid ID</label><input class="form-control" type="file"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="DeleteCustomBooking">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Warning</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this booking?&nbsp;</p>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">No</button><button class="btn btn-primary" type="button">Yes</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
+    
+    <script>
+        async function fetchUsers() {
+            try {
+                const response = await fetch('/users'); // Adjust the URL based on your setup
+                const users = await response.json();
+    
+                const tableBody = document.querySelector('#UserTable tbody');
+                tableBody.innerHTML = ''; // Clear existing rows
+    
+                users.forEach(user => {
+                    const row = `
+                        <tr>
+                            <td>${user.firstName}</td>
+                            <td>${user.middleName || ''}</td>
+                            <td>${user.lastName}</td>
+                            <td>${user.email}</td>
+                            <td>${user.password}</td> <!-- Consider not displaying this -->
+                            <td>${user.phoneNumber}</td>
+                            <td>${new Date(user.birthDate).toLocaleDateString()}</td>
+                            <td>${user.address}</td>
+                        </tr>
+                    `;
+                    tableBody.insertAdjacentHTML('beforeend', row);
+                });
+            } catch (err) {
+                console.error('Error fetching users:', err);
+            }
+        }
+    
+        // Call the fetch function when the page loads
+        document.addEventListener('DOMContentLoaded', fetchUsers);
+    </script>
+    
+
+</body>
+
+</html>

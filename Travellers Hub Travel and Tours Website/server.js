@@ -22,9 +22,12 @@ mongoose.connect('mongodb+srv://TravellersHubTT:adminpassword@databasecluster.9h
 
 // Other imports
 const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/userRoutes'); 
+
 
 // Use Routes
 app.use('/api/auth', authRoutes);
+app.use('/api', userRoutes); 
 
 
 // Serve static files (DestinaionPick.html)
