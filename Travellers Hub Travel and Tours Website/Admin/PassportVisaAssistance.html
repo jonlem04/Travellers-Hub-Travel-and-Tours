@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Admin Panel</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/Bootstrap-4-Calendar-No-Custom-Code.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" id="NavbarAdminPanel" style="max-width: 230px;background: #0299c4;">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" id="Navbarbrand" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-poll"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Admin Panel</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="BookingsDropDown"><i class="fas fa-newspaper" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Bookings</span></a>
+                            <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" style="color: #eef4f7;" href="ViewBookings.html">View Booking</a><a class="dropdown-item" id="ApprovedBooking" style="color: #eef4f7;" href="ApprovedBookings.html">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" style="color: #eef4f7;" href="CompletedBookings.html">Completed Booking</a></div>
+                        </div><a class="nav-link" href="PassportVisaAssistance.html"><i class="fas fa-passport"></i><span>Passport/Visa Assistance</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"><i class="fas fa-users-cog" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Manage Admin</span></a>
+                            <div class="dropdown-menu" style="background: #055d76;"><a class="dropdown-item" id="AdminList" style="color: #eef4f7;">Admin List</a><a class="dropdown-item" id="AddAdmin" style="color: #eef4f7;">Add Admin</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow" id="UserProfile"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" style="font-size: 12.9px;">Frederic Yulo - Super Admin</span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in" id="UserProfileMenu"><a class="dropdown-item" href="Admin%20Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin%20Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">Passport / Visa Assistance</h3>
+                    <div class="card shadow">
+                        <div class="card-header text-end d-flex flex-row justify-content-between py-3"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                        <div class="card-body">
+                            <div class="table-responsive table mt-2" id="CustomApprovalTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>User ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Request Assistance</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>USER-20240926-70292<br></td>
+                                            <td>Edgar Lee Parokya<br></td>
+                                            <td>edgarparokya@gmail.com</td>
+                                            <td>Passport</td>
+                                            <td class="d-flex justify-content-center">
+                                                <div class="dropdown" id="SelectAssistanceDropDown"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="background: #0299c4;">Select</button>
+                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#" data-bs-target="#Passport-Modal" data-bs-toggle="modal">Passport</a><a class="dropdown-item" href="#" data-bs-target="#Visa-Modal" data-bs-toggle="modal">Visa</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Travellers Hub Travel and Tours 2024</span></div>
+                </div>
+            </footer><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="Passport-Modal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">View Passport</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-column justify-content-start align-content-center">
+                        <p><strong>Passport Document</strong></p>
+                        <div class="d-flex justify-content-center">
+                            <div class="ratio ratio-16x9 d-flex justify-content-center align-items-center"><iframe></iframe></div>
+                        </div>
+                        <p><strong>Valid ID</strong></p>
+                        <div>
+                            <div class="ratio ratio-16x9"><iframe></iframe></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="Visa-Modal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">View Visa</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-column justify-content-around">
+                        <p><strong>Visa Document</strong></p>
+                        <div class="d-flex justify-content-center">
+                            <div class="ratio ratio-16x9 d-flex justify-content-center align-items-center"><iframe></iframe></div>
+                        </div>
+                        <p><strong>Valid ID</strong></p>
+                        <div>
+                            <div class="ratio ratio-16x9"><iframe></iframe></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

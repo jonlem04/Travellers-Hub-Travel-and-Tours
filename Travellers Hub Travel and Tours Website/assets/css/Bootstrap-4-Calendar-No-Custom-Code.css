@@ -74,18 +74,49 @@
 }
 
 #CompletedBooking:Hover {
-  background-color: #055d76;
+  background-color: #036a87;
 }
 
 #ApprovedBooking:Hover {
-  background-color: #055d76;
+  background-color: #036a87;
 }
 
 #View-Booking:Hover {
-  background-color: #055d76;
+  background-color: #036a87;
 }
 
 #ModifyBookingButton:Hover {
   background-color: #0299c4;
+}
+
+#UserTable {
+  min-height: 450px;
+}
+
+#CustomApprovalTable {
+  min-height: 450px;
+}
+
+a {
+  display: block;
+  width: 100%;
+  errortext-align: left;
+  padding: 1rem;
+  width: 14rem;
+  font-size: .85rem;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+#Bookings-Dropdown-Menu {
+  max-width: 225px !important;
+}
+
+#AdminList:Hover {
+  background-color: #036a87;
+}
+
+#AddAdmin:Hover {
+  background-color: #036a87;
 }
 

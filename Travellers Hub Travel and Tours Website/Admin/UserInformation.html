@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="../assets/css/Bootstrap-4-Calendar-No-Custom-Code.css">
-    <link rel="stylesheet" href="../assets/css/untitled-1.css">
-    <link rel="stylesheet" href="../assets/css/untitled.css">
 </head>
 
 <body id="page-top">
@@ -24,18 +22,15 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a></li>
-                    <li class="nav-item dropdown" id="CustomBooking"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-newspaper"></i>Bookings</a>
-                        <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" href="Bookings/ViewBookings.html" style="color: #eef4f7;">View Booking</a><a class="dropdown-item" id="ApprovedBooking" href="Bookings/ApprovedBookings.html" style="color: #eef4f7;">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" href="Bookings/CompletedBookings.html" style="color: #eef4f7;">Completed Booking</a></div>
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="BookingsDropDown"><i class="fas fa-newspaper" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Bookings</span></a>
+                            <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" style="color: #eef4f7;" href="ViewBookings.html">View Booking</a><a class="dropdown-item" id="ApprovedBooking" style="color: #eef4f7;" href="ApprovedBookings.html">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" style="color: #eef4f7;" href="CompletedBookings.html">Completed Booking</a></div>
+                        </div><a class="nav-link" href="PassportVisaAssistance.html"><i class="fas fa-passport"></i><span>Passport/Visa Assistance</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"><i class="fas fa-users-cog" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Manage Admin</span></a>
+                            <div class="dropdown-menu" style="background: #055d76;"><a class="dropdown-item" id="AdminList" style="color: #eef4f7;">Admin List</a><a class="dropdown-item" id="AddAdmin" style="color: #eef4f7;">Add Admin</a></div>
+                        </div>
                     </li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="CancelledBooking.html"><i class="far fa-calendar-times"></i>Cancelled Booking</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
                 </ul>
-                <div class="container" id="Calendar">
-                    <h1 style="border-color: rgb(133, 135, 150);border-top-color: rgb(133,;border-right-color: 135,;border-bottom-color: 150);border-left-color: 135,;color: #eef4f7;">Calendar</h1>
-                </div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
@@ -53,8 +48,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="../assets/img/avatars/avatar1.jpeg"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="Admin%20Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin%20Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                <div class="nav-item dropdown no-arrow" id="UserProfile"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" style="font-size: 12.9px;">Frederic Yulo - Super Admin</span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in" id="UserProfileMenu"><a class="dropdown-item" href="Admin%20Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin%20Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
@@ -65,7 +60,7 @@
                 <div class="container-fluid">
                     <h3 class="text-dark mb-4">User Information</h3>
                     <div class="card shadow">
-                        <div class="card-header text-end d-flex flex-row justify-content-between align-items-center align-content-center py-3"><label class="form-label"><input type="search" id="SearchUser" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label><button class="btn btn-primary" id="CreateUserButton" type="button">Create User</button></div>
+                        <div class="card-header text-end d-flex flex-row justify-content-between align-items-center align-content-center py-3"><label class="form-label"><input type="search" id="SearchUser" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label><button class="btn btn-primary" id="CreateUserButton" type="button" style="background: #08addc;" data-bs-target="#CreateUserButton">Create User</button></div>
                         <div class="card-body">
                             <div class="table-responsive table mt-2" id="UserTable" role="grid" aria-describedby="dataTable_info">
                                 <table class="table my-0" id="dataTable">
@@ -84,15 +79,6 @@
                                     <tbody></tbody>
                                 </table>
                             </div>
-                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers" id="PageNumber">
-                                <ul class="pagination">
-                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -213,6 +199,29 @@
                         <p>Are you sure you want to delete this booking?&nbsp;</p>
                     </div>
                     <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">No</button><button class="btn btn-primary" type="button">Yes</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="CreateUserButton">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create User</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>First name</p><input type="text">
+                                    </div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
                 </div>
             </div>
         </div>

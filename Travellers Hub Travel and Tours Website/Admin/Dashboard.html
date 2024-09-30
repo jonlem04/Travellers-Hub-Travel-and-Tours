@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="../assets/css/Bootstrap-4-Calendar-No-Custom-Code.css">
-    <link rel="stylesheet" href="../assets/css/untitled-1.css">
-    <link rel="stylesheet" href="../assets/css/untitled.css">
 </head>
 
 <body id="page-top">
@@ -24,18 +22,15 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a></li>
-                    <li class="nav-item dropdown" id="CustomBooking"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-newspaper"></i>Bookings</a>
-                        <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" href="Bookings/ViewBookings.html" style="color: #eef4f7;">View Booking</a><a class="dropdown-item" id="ApprovedBooking" href="Bookings/ApprovedBookings.html" style="color: #eef4f7;">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" href="Bookings/CompletedBookings.html" style="color: #eef4f7;">Completed Booking</a></div>
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="BookingsDropDown"><i class="fas fa-newspaper" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Bookings</span></a>
+                            <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" style="color: #eef4f7;" href="ViewBookings.html">View Booking</a><a class="dropdown-item" id="ApprovedBooking" style="color: #eef4f7;" href="ApprovedBookings.html">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" style="color: #eef4f7;" href="CompletedBookings.html">Completed Booking</a></div>
+                        </div><a class="nav-link" href="PassportVisaAssistance.html"><i class="fas fa-passport"></i><span>Passport/Visa Assistance</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"><i class="fas fa-users-cog" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Manage Admin</span></a>
+                            <div class="dropdown-menu" style="background: #055d76;"><a class="dropdown-item" id="AdminList" style="color: #eef4f7;">Admin List</a><a class="dropdown-item" id="AddAdmin" style="color: #eef4f7;">Add Admin</a></div>
+                        </div>
                     </li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="CancelledBooking.html"><i class="far fa-calendar-times"></i>Cancelled Booking</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
                 </ul>
-                <div class="container" id="Calendar">
-                    <h1 style="border-color: rgb(133, 135, 150);border-top-color: rgb(133,;border-right-color: 135,;border-bottom-color: 150);border-left-color: 135,;color: #eef4f7;">Calendar</h1>
-                </div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
@@ -53,8 +48,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="../assets/img/avatars/avatar1.jpeg"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="Admin%20Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin%20Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                <div class="nav-item dropdown no-arrow" id="UserProfile"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" style="font-size: 12.9px;">Frederic Yulo - Super Admin</span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in" id="UserProfileMenu"><a class="dropdown-item" href="Admin%20Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin%20Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
@@ -64,29 +59,29 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+                        <h3 class="text-dark mb-0">Dashboard</h3>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-start-primary py-2">
+                            <div class="card shadow border-start-primary py-2" style="background: #fb3e3e;">
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>Number of Custom bookings</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>56,232</span></div>
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: rgb(255,255,255);">Number of Custom bookings</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="CustomCount" style="color: rgb(255,255,255);">0</span></div>
                                         </div>
-                                        <div class="col-auto"><i class="fas fa-newspaper fa-2x text-gray-300"></i></div>
+                                        <div class="col-auto"><i class="fab fa-wpforms fa-2x text-gray-300"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-start-success py-2">
+                            <div class="card shadow border-start-success py-2" style="background: #3ba639;">
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>Number of Package bookings</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>45,245</span></div>
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span style="color: rgb(255,255,255);">Number of Package bookings</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="PackageCount" style="color: rgb(255,255,255);">0</span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-box-open fa-2x text-gray-300"></i></div>
                                     </div>
@@ -94,34 +89,25 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-start-info py-2">
+                            <div class="card shadow border-start-success py-2" style="background: #eec800;">
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Database storage</span></div>
-                                            <div class="row g-0 align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span>50%</span></div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="visually-hidden">50%</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span style="color: rgb(255,255,255);">Number of Users</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="UserCount" style="color: rgb(255,255,255);">0</span></div>
                                         </div>
-                                        <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                                        <div class="col-auto"><i class="fas fa-users fa-2x text-gray-300"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-start-warning py-2">
+                            <div class="card shadow border-start-warning py-2" style="background: #055d76;">
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>Pending Approval</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>18</span></div>
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span style="color: rgb(255,255,255);">Pending Approval</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="ApprovalCount" style="color: rgb(255,255,255);">0</span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
                                     </div>
@@ -133,33 +119,22 @@
                         <div class="col-lg-7 col-xl-8">
                             <div class="card shadow mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary fw-bold m-0">Earnings Overview</h6>
-                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
-                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
-                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
-                                        </div>
-                                    </div>
+                                    <h6 class="text-primary fw-bold m-0">Booking Overview</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
+                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Custom&quot;,&quot;fill&quot;:false,&quot;data&quot;:[&quot;200&quot;,&quot;500&quot;,&quot;2&quot;,&quot;4&quot;,&quot;1&quot;,&quot;88&quot;],&quot;backgroundColor&quot;:&quot;#fb3e3e&quot;,&quot;borderColor&quot;:&quot;#fb3e3e&quot;,&quot;borderWidth&quot;:&quot;4&quot;},{&quot;label&quot;:&quot;Package&quot;,&quot;fill&quot;:false,&quot;data&quot;:[&quot;55&quot;,&quot;888&quot;,&quot;&quot;],&quot;borderColor&quot;:&quot;rgb(59,166,57)&quot;,&quot;backgroundColor&quot;:&quot;rgb(59,166,57)&quot;,&quot;borderWidth&quot;:&quot;3&quot;},{&quot;label&quot;:&quot;Domestic&quot;,&quot;fill&quot;:false,&quot;data&quot;:[&quot;24&quot;,&quot;5&quot;,&quot;4&quot;,&quot;66&quot;],&quot;borderColor&quot;:&quot;#055d76&quot;,&quot;backgroundColor&quot;:&quot;rgb(5,93,118)&quot;,&quot;borderWidth&quot;:&quot;3&quot;},{&quot;label&quot;:&quot;International&quot;,&quot;fill&quot;:false,&quot;data&quot;:[&quot;4&quot;,&quot;23&quot;],&quot;borderColor&quot;:&quot;#eec800&quot;,&quot;backgroundColor&quot;:&quot;rgb(238,200,0)&quot;,&quot;borderWidth&quot;:&quot;3&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;,&quot;display&quot;:false},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgba(174,174,174,0.82)&quot;,&quot;zeroLineColor&quot;:&quot;rgba(174,174,174,0.82)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;0&quot;],&quot;zeroLineBorderDash&quot;:[&quot;0&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#18212d&quot;,&quot;fontSize&quot;:&quot;9&quot;,&quot;lineHeight&quot;:&quot;3.2&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgba(174,174,174,0.82)&quot;,&quot;zeroLineColor&quot;:&quot;rgba(174,174,174,0.82)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;0&quot;],&quot;zeroLineBorderDash&quot;:[&quot;0&quot;],&quot;drawOnChartArea&quot;:true},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#18212d&quot;,&quot;fontSize&quot;:&quot;9&quot;,&quot;lineHeight&quot;:&quot;3.2&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
+                                    <div class="d-flex flex-row justify-content-evenly align-items-center align-content-center" style="margin-top: 14px;"><span style="color: #fb3e3e;font-weight: bold;"><i class="fas fa-circle"></i>&nbsp;Custom</span><span style="font-weight: bold;color: #3ba639;"><i class="fas fa-circle"></i>&nbsp;Package</span><span style="color: #055d76;font-weight: bold;"><i class="fas fa-circle"></i>&nbsp;Domestic</span><span style="color: #eec800;font-weight: bold;"><i class="fas fa-circle"></i>&nbsp;International</span></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-xl-4">
                             <div class="card shadow mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary fw-bold m-0">Revenue Sources</h6>
-                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
-                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
-                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
-                                        </div>
-                                    </div>
+                                    <h6 class="text-primary fw-bold m-0" style="color: rgb(78, 115, 223);">Revenue Sources</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
-                                    <div class="text-center small mt-4"><span class="me-2"><i class="fas fa-circle text-primary"></i>Domestic</span><span class="me-2"><i class="fas fa-circle text-success"></i>International</span><span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;Refferal</span></div>
+                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Bookings&quot;,&quot;backgroundColor&quot;:[&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;reverse&quot;:false},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
+                                    <div class="text-center d-flex flex-row justify-content-evenly align-items-center align-content-around small mt-4"><span style="color: rgb(54,185,204);font-weight: bold;"><i class="fas fa-circle"></i>&nbsp;Domestic</span><span style="color: rgb(28,200,138);font-weight: bold;"><i class="fas fa-circle"></i>&nbsp;International</span></div>
                                 </div>
                             </div>
                         </div>

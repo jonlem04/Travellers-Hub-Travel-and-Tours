@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../../assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="../../assets/css/Bootstrap-4-Calendar-No-Custom-Code.css">
-    <link rel="stylesheet" href="../../assets/css/untitled-1.css">
-    <link rel="stylesheet" href="../../assets/css/untitled.css">
 </head>
 
 <body id="page-top">
@@ -24,18 +22,15 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a></li>
-                    <li class="nav-item dropdown" id="CustomBooking"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-newspaper"></i>Bookings</a>
-                        <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" href="Bookings/ViewBookings.html" style="color: #eef4f7;">View Booking</a><a class="dropdown-item" id="ApprovedBooking" href="Bookings/ApprovedBookings.html" style="color: #eef4f7;">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" href="Bookings/CompletedBookings.html" style="color: #eef4f7;">Completed Booking</a></div>
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="BookingsDropDown"><i class="fas fa-newspaper" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Bookings</span></a>
+                            <div class="dropdown-menu" id="Bookings-Dropdown" style="background: #055d76;"><a class="dropdown-item" id="View-Booking" style="color: #eef4f7;" href="ViewBookings.html">View Booking</a><a class="dropdown-item" id="ApprovedBooking" style="color: #eef4f7;" href="ApprovedBookings.html">Approved Booking</a><a class="dropdown-item" id="CompletedBooking" style="color: #eef4f7;" href="CompletedBookings.html">Completed Booking</a></div>
+                        </div><a class="nav-link" href="PassportVisaAssistance.html"><i class="fas fa-passport"></i><span>Passport/Visa Assistance</span></a>
+                        <div class="nav-item dropdown" style="color: rgb(248,249,252);"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"><i class="fas fa-users-cog" style="color: rgba(255,254,254,0.37);"></i><span style="color: rgba(247,238,238,0.8);">&nbsp;Manage Admin</span></a>
+                            <div class="dropdown-menu" style="background: #055d76;"><a class="dropdown-item" id="AdminList" style="color: #eef4f7;">Admin List</a><a class="dropdown-item" id="AddAdmin" style="color: #eef4f7;">Add Admin</a></div>
+                        </div>
                     </li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="CancelledBooking.html"><i class="far fa-calendar-times"></i>Cancelled Booking</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
                 </ul>
-                <div class="container" id="Calendar">
-                    <h1 style="border-color: rgb(133, 135, 150);border-top-color: rgb(133,;border-right-color: 135,;border-bottom-color: 150);border-left-color: 135,;color: #eef4f7;">Calendar</h1>
-                </div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
@@ -53,8 +48,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="../../assets/img/avatars/avatar1.jpeg"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="Admin Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                <div class="nav-item dropdown no-arrow" id="UserProfile"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" style="font-size: 12.9px;">Frederic Yulo - Super Admin</span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in" id="UserProfileMenu"><a class="dropdown-item" href="Admin Selection/Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="Admin Selection/Settings.html"><i class="fas fa-cog fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
@@ -74,7 +69,6 @@
                                             <th>Booking</th>
                                             <th>User ID</th>
                                             <th>Name</th>
-                                            <th>Email</th>
                                             <th>Departure Date</th>
                                             <th></th>
                                         </tr>
@@ -82,136 +76,18 @@
                                     <tbody>
                                         <tr>
                                             <td>Custom</td>
-                                            <td>AG5484</td>
-                                            <td>Alice Guo</td>
-                                            <td>guoalice@gmail.com</td>
+                                            <td>USER-20240926-70292<br></td>
+                                            <td>Edgar Lee Parokya</td>
                                             <td>2008/11/28</td>
                                             <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
+                                                <div class="dropdown" id="Modify-Booking-Drop-Down"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton" type="button" style="background: #08addc;"><i class="far fa-edit"></i>&nbsp;Modify</button>
                                                     <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Package</td>
-                                            <td>JGD2499</td>
-                                            <td>John De Guzman</td>
-                                            <td>john2245@gmail.com</td>
-                                            <td>2009/10/09<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-1"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-1" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-1" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-1" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Package</td>
-                                            <td>CCS5223</td>
-                                            <td>Cristina Cruz Samson</td>
-                                            <td>samsontina004@gmail.com</td>
-                                            <td>2009/01/12<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-2"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-2" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-2" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-2" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Custom</td>
-                                            <td>NA6345</td>
-                                            <td>Noah Arkanghel</td>
-                                            <td>noahpogi@gmail.com</td>
-                                            <td>2012/10/13<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-3"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-3" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-3" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-3" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Package</td>
-                                            <td>RGB523</td>
-                                            <td>Rica Geronimo Blanca</td>
-                                            <td>ricablancarics@gmail.com</td>
-                                            <td>2011/06/07<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-4"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-4" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-4" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-4" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Custom</td>
-                                            <td>ELP9871</td>
-                                            <td>Edgar Lee Parokya</td>
-                                            <td>parokyaniedgar@gmail.com</td>
-                                            <td>2012/12/02<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-5"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-5" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-5" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-5" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Custom<br></td>
-                                            <td>BMV1142</td>
-                                            <td>Bruno Mars Venus<br></td>
-                                            <td>brunovenus@gmail.com</td>
-                                            <td>2011/05/03<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-6"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-6" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-6" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-6" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Package<br></td>
-                                            <td>AL2445</td>
-                                            <td>Anna Lopez</td>
-                                            <td>annalopzzz@gmail.com</td>
-                                            <td>2011/12/12<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-7"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-7" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-7" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-7" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Package<br></td>
-                                            <td>CC2225</td>
-                                            <td>Cara Cruz&nbsp;</td>
-                                            <td>caradavidcruz@gmail.com</td>
-                                            <td>2011/12/06<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-8"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-8" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-8" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-8" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Custom<br></td>
-                                            <td>AR4425</td>
-                                            <td>Aljames Richards</td>
-                                            <td>aljamesrichards@gmail.com</td>
-                                            <td>2012/03/29<br></td>
-                                            <td class="text-center">
-                                                <div class="dropdown" id="Modify-Booking-Drop-Down-9"><button class="btn btn-primary btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="ModifyBookingButton-9" type="button" style="background: #0ac0f4;"><i class="far fa-edit"></i>&nbsp;Modify</button>
-                                                    <div class="dropdown-menu"><a class="dropdown-item" id="Reschedule-Menu-9" href="#" data-bs-target="#RescheduleModal" data-bs-toggle="modal">Reschedule&nbsp;Booking<br></a><a class="dropdown-item" id="Cancel-Menu-9" href="#" data-bs-target="#CancelModal" data-bs-toggle="modal">Cancel Booking</a></div>
                                                 </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
-                                <ul class="pagination">
-                                    <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -222,35 +98,8 @@
                 </div>
             </footer>
         </div>
-        <div class="modal fade" role="dialog" tabindex="-1" id="ViewBookingModal">
-            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">View Booking</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col d-flex flex-column justify-content-center">
-                                        <p><strong>&nbsp;User ID</strong></p><span>RGB5230</span>
-                                    </div>
-                                    <div class="col">
-                                        <p><strong>Name</strong></p><span>Edgar Lee Parokya</span>
-                                    </div>
-                                    <div class="col">
-                                        <p><strong>Email</strong></p><span>parokyaniedgar@gmail.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: #e3e3e3;color: #313437;">Decline</button><button class="btn btn-primary" type="button" style="background: #0ac0f4;">Approve</button></div>
-                </div>
-            </div>
-        </div>
         <div class="modal fade" role="dialog" tabindex="-1" id="CancelModal">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-fullscreen-sm-down" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Cancel Booking</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -263,7 +112,7 @@
             </div>
         </div>
         <div class="modal fade" role="dialog" tabindex="-1" id="RescheduleModal">
-            <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-dialog modal-sm modal-fullscreen-sm-down" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Reschedule Booking</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
