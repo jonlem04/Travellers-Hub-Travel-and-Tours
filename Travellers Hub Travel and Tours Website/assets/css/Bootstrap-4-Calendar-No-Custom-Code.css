@@ -120,3 +120,11 @@ a {
   background-color: #036a87;
 }
 
+#UserDisplayLink:Hover {
+  background-color: #eef4f7;
+}
+
+#CancelledBooking:Hover {
+  background-color: #036a87;
+}
+
