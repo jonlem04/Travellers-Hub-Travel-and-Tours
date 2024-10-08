@@ -128,3 +128,46 @@ a {
   background-color: #036a87;
 }
 
+#BookingsDropDownLink:Hover {
+  color: #ffffff;
+}
+
+#BookingsIcon:Hover {
+  color: #ffffff;
+}
+
+#BookingsIcon {
+  color: rgba(255,254,254,0.37);
+}
+
+#BookingsDropDownLink-1 {
+}
+
+PassportAssistanceLink:Hover {
+  color: #ffffff;
+}
+
+#ApprovedAssistance:Hover {
+  background-color: #036a87;
+}
+
+#VisaAssistance:Hover {
+  background-color: #036a87;
+}
+
+#PassportAssistanceTable {
+  min-height: 450px;
+}
+
+#VisaAssistanceTable {
+  min-height: 450px;
+}
+
+#ApprovedAssistanceTable {
+  min-height: 450px;
+}
+
+#PassportAssistance {
+  background-color: #036a87;
+}
+
