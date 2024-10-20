@@ -5,13 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Table - Admin Panel</title>
+    <link rel="icon" type="image/png" sizes="367x367" href="../assets/img/Logo_NoBG.png">
+    <link rel="icon" type="image/png" sizes="367x367" href="../assets/img/Logo_NoBG.png">
+    <link rel="icon" type="image/png" sizes="367x367" href="../assets/img/Logo_NoBG.png">
+    <link rel="icon" type="image/png" sizes="367x367" href="../assets/img/Logo_NoBG.png">
+    <link rel="icon" type="image/png" sizes="367x367" href="../assets/img/Logo_NoBG.png">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aleo&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil&amp;display=swap">
     <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="../assets/css/Bootstrap-4-Calendar-No-Custom-Code.css">
     <link rel="stylesheet" href="../assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="../assets/css/untitled-1.css">
+    <link rel="stylesheet" href="../assets/css/untitled-2.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
 </head>
 
 <body id="page-top">
@@ -24,8 +39,8 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="UserInformation.html"><i class="fas fa-user"></i><span>Users</span></a><a class="nav-link" href="Visa.html"><i class="fas fa-address-card"></i><span>Visa</span></a>
-                        <div class="nav-item dropdown" id="ContentManagement"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown"><i class="fas fa-passport" id="PassportAssistanceLink-1" style="color: rgba(237,237,237,0.46);"></i><span style="color: rgba(234,234,234,0.8);">&nbsp;Content Management</span></a>
-                            <div class="dropdown-menu" id="CMSDropdown" style="background: #055d76;"><a class="dropdown-item" id="PackageCMS" style="color: #eef4f7;" href="PackageCMS.html">Package Content</a><a class="dropdown-item" id="CustomCMS" style="color: #eef4f7;" href="PassportAssistance.html">Testimonials&nbsp;Content<br></a></div>
+                        <div class="nav-item dropdown" id="ContentManagementSystem"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="CMSLink" style="font-size: 13.6px;color: #dee3e6;"><i class="fas fa-passport" style="color: rgba(237,237,237,0.46);"></i><span style="color: rgba(234,234,234,0.8);">&nbsp;Content Management</span></a>
+                            <div class="dropdown-menu" style="background: #055d76;"><a class="dropdown-item" id="PackageCMS" style="color: #eef4f7;" href="PackageCMS.html">Package Content</a><a class="dropdown-item" id="CustomCMS" style="color: #eef4f7;" href="TestimonialCMS.html">Testimonials&nbsp;Content<br></a></div>
                         </div><a class="nav-link" href="ManageAdmin.html"><i class="fas fa-user-cog"></i><span>Manage Admin</span></a>
                     </li>
                 </ul>
@@ -38,25 +53,25 @@
                         <ul class="navbar-nav flex-nowrap ms-auto">
                             <li class="nav-item dropdown no-arrow">
                                 <div class="nav-item dropdown no-arrow" id="UserProfile"><a class="dropdown-toggle d-flex flex-row justify-content-center align-items-center nav-link" aria-expanded="false" data-bs-toggle="dropdown" id="UserDisplayLink" href="#" style="width: 238px;">
-                                        <div class="d-flex flex-column justify-content-center align-items-end align-content-center"><span class="d-lg-inline me-2 text-gray-600 small" id="AdminDisplay" style="font-size: 15.9px;color: rgb(133, 135, 150);"><strong>Jon Lemuel Mendoza</strong></span><span class="d-lg-inline me-2 text-gray-600 small" id="RoleDisplay" style="font-size: 12.9px;">&nbsp;Super Admin</span></div><i class="fas fa-caret-down" style="color: rgb(133,135,150);font-size: 20.6px;"></i>
+                                        <div class="d-flex flex-column justify-content-center align-items-end align-content-center"><span class="d-lg-inline me-2 text-gray-600 small" id="adminDisplay" style="font-size: 15.9px;border-color: rgb(133, 135, 150);"><strong>Jon Lemuel Mendoza</strong></span><span class="d-lg-inline me-2 text-gray-600 small" id="roleDisplay" style="font-size: 12.9px;">&nbsp;Super Admin</span></div><i class="fas fa-caret-down" style="color: rgb(133,135,150);font-size: 20.6px;"></i>
                                     </a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in" id="UserProfileMenu"><a class="dropdown-item" href="Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in" id="UserProfileMenu"><a class="dropdown-item" id="Profile" href="Profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" id="Logout" href="AdminLogin.html"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a></div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Bookings</h3>
+                    <h3 class="text-dark mb-4"><strong>Visa</strong></h3>
                     <div class="card shadow">
                         <div class="card-header text-end d-flex flex-row justify-content-between py-3"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
                         <div class="card-body">
-                            <div class="table-responsive table mt-2" id="CustomApprovalTable" role="grid" aria-describedby="dataTable_info">
+                            <div class="table-responsive table mt-2" id="VisaTable" role="grid" aria-describedby="dataTable_info">
                                 <table class="table my-0" id="dataTable">
                                     <thead>
                                         <tr>
-                                            <th>Booking</th>
-                                            <th>Booking Number</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
                                             <th>Name</th>
                                             <th>Departure Date</th>
                                             <th></th>
@@ -72,7 +87,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="d-flex justify-content-end"></div>
                         </div>
                     </div>
                 </div>

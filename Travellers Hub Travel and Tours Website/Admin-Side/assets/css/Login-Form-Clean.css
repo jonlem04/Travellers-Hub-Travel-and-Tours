@@ -66,3 +66,47 @@
   text-decoration: none;
 }
 
+#UserTable {
+  min-height: 451px;
+}
+
+#AdminTable {
+  min-height: 451px;
+}
+
+#VisaTable {
+  min-height: 451px;
+}
+
+#PackageCMS:Hover {
+  background-color: #036a87;
+}
+
+#CustomCMS:Hover {
+  background-color: #036a87;
+}
+
+#CMSLink {
+  text-decoration: none;
+}
+
+#ContentManagementSystem {
+  display: block;
+  text-align: left;
+  padding: 1rem;
+  width: 14rem;
+  font-size: .85rem;
+}
+
+#Profile:Hover {
+  background-color: #eef4f7;
+}
+
+#Logout:Hover {
+  background-color: #eef4f7;
+}
+
+#UserDisplayLink:Hover {
+  background-color: #eef4f7;
+}
+
